@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+   user_id: 1
+  startday: 2013-07-24
+  endday: 2013-07-24
+  hoursworked: 1.5
+  grosspay: 1.5
+  deductions: 1.5
+  netpay: 1.5
+
+two:
+   user_id: 1
+  startday: 2013-07-24
+  endday: 2013-07-24
+  hoursworked: 1.5
+  grosspay: 1.5
+  deductions: 1.5
+  netpay: 1.5

@@ -1,0 +1,71 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<div class="employee-profile">
+<h2>Profile</h2>
+
+
+
+  <p>
+    <div class="input-container">
+    <label for="firstname">First Name:</label>
+    <%= @employee.firstname %>
+    </div>
+  </p>
+    <p>
+ <div class="input-container">
+    <label for="lastname">Last Name:</label>
+    <%= @employee.lastname %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+    <label for="ssn">SSN:</label>
+    <%= @employee.ssn %>
+ </div>
+  </p> 
+  <p>
+ <div class="input-container">
+ <label for="address">Address:</label>   
+    <%= @employee.address %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+ <label for="zipcode">Zipcode:</label>   
+    <%= @employee.zipcode %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+ <label for="city">City:</label>   
+    <%= @employee.city %>
+ </div>
+  </p>
+<!--  <p>
+ <div class="input-container">
+ <label for="state">State:</label>    
+    <input type="text" name="email" id="state">
+ </div>
+  </p>-->
+  <p>
+ <div class="input-container">
+ <label for="dob">Date Of Birth:</label>    
+    <%= @employee.dob %>
+ </div>
+  </p>
+
+  <p>
+ <div class="input-container">
+ <label for="phonenumber">Phone Number:</label>   
+    <%= @employee.phonenumber %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+ <label for="department">Department:</label>   
+    <%= @employee.department %>
+ </div>
+  </p>
+</div>

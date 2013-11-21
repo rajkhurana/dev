@@ -1,0 +1,72 @@
+<div class="list-relate-job">
+<h2>List of created Jobs</h2>
+<div class="list-container">
+<div class="job-list-heading">
+<div class="job-title">
+<h3>Job Title</h3>
+</div>
+<div class="job-desc">
+<h3>Job Description</h3>
+</div>
+<div class="pay-rate">
+<h3>Pay Rate</h3>
+</div>
+<div class="is-salaried">
+<h3>Is Salaried</h3>
+</div>
+<div class="action">
+</div>
+</div>
+
+<% @jobs.each do |job| %>
+<div class="job-container">
+<div class="job-title">
+<h3><%= job.jobtitle%></h3>
+</div>
+<div class="job-desc">
+<h3><%= job.jobdesc%></h3>
+</div>
+<div class="pay-rate">
+<h3><%= job.payrate%></h3>
+</div>
+<div class="is-salaried">
+<h3><% if job.issalaried %><%=  "Yes"%><% else %><%= "NO" %><% end %></h3>
+</div>
+<div class="action">
+<span><%= link_to "Edit",edit_job_path(job) %></span><span><%= link_to 'Delete', job_path(job), method: :delete, data:{ confirm:'Are you sure?'} %></span>
+</div>
+</div>
+<% end %>
+</div>
+
+
+<h2 class="user-job">Related Users and Jobs</h2>
+<%= form_tag '/update_jobs', :method => :post %>
+<table border="1">
+  <tr>
+    <td>User</td>
+    <% @all_jobs.each do |job| %>
+    <td><%= job.jobtitle %></td>
+    <% end %>
+  </tr>
+
+  <% @all_users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <% @all_jobs.each do |job| %>
+      <%
+	if job.users.include? user
+	  check_value = true
+	else check_value = false
+	end
+      %>
+      <td>
+	<%= check_box_tag 'user_' + user.id.to_s + '_job_' + job.id.to_s, 1, check_value %>
+      </td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<%= submit_tag 'Submit' %>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+   jobtitle: MyString
+  jobdesc: MyString
+  payrate: 1.5
+  issalaried: false
+
+two:
+   jobtitle: MyString
+  jobdesc: MyString
+  payrate: 1.5
+  issalaried: false

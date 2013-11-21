@@ -1,0 +1,59 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+
+<%= form_for :company, url: companies_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p> 
+  <p>
+    <%= f.label :ssn,"SSN" %><br>
+    <%= f.text_field :ssn %>
+  </p> 
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </p>
+  <p>
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </p>
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </p>
+   <p>
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phonenumber %>
+  </p>
+   <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <label for="state">State</label><br>
+    <input type="text" name="email" id="state">
+  </p>
+  <p>
+    <%= f.label :doe,"Date of establishment" %><br>
+    <%= f.date_field :doe %>
+  </p>
+  <p>
+    <label for="company_password">Password</label><br>
+    <input type="password" name="company[password]" id="company_password">
+  </p>
+ <p>
+    <label for="company_password_confirmation">Password confirmation</label><br>
+    <input type="password" name="company[password_confirmation]" id="company_password_confirmation">
+  </p>
+  <p>
+    <%= f.label :url%><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

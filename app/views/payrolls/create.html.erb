@@ -1,0 +1,13 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<pre>
+  <% session[:current_employee_list].each do |user| %>
+  <%= @cate= User.find(user).jobs.all%>
+    <% @cate.each do |c| %>
+    <%= user %><br/>
+  <% end %>
+<% end %>
+<%= "create.html" %>

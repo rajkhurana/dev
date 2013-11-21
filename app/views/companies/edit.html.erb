@@ -1,0 +1,48 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+
+<%= form_for :company, url: company_path(@company), method: :patch do |f| %>
+  <p>
+    <%= f.label :name,"Name" %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :ssn,"SSN" %><br>
+    <%= f.text_field :ssn %>
+  </p> 
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </p>
+  <p>
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </p>
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <label for="state">State</label><br>
+    <input type="text" name="email" id="state">
+  </p>
+  <p>
+    <%= f.label :doe %><br>
+    <%= f.date_field :doe %>
+  </p>
+  <p>
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phonenumber %>
+  </p>  
+  <p>
+    <%= f.label :url%><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

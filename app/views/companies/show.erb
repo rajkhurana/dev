@@ -1,0 +1,62 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<div class="company-profile">
+<h2>Profile</h2>
+  <p>
+    <div class="input-container">
+    <label for="name">Name:</label>
+    <%= @company.name %>
+    </div>
+  </p>
+    <p>
+ <div class="input-container">
+    <label for="ssn">SSN:</label>
+    <%= @company.ssn %>
+ </div>
+  </p> 
+  <p>
+ <div class="input-container">
+ <label for="address">Address:</label>   
+    <%= @company.address %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+ <label for="zipcode">Zipcode:</label>   
+    <%= @company.zipcode %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+ <label for="city">City:</label>   
+    <%= @company.city %>
+ </div>
+  </p>
+<!--  <p>
+ <div class="input-container">
+ <label for="state">State:</label>    
+    <input type="text" name="email" id="state">
+ </div>
+  </p>-->
+  <p>
+ <div class="input-container">
+ <label for="dob">Date Of Establishment:</label>    
+    <%= @company.doe %>
+ </div>
+  </p>
+
+  <p>
+ <div class="input-container">
+ <label for="phonenumber">Phone Number:</label>   
+    <%= @company.phonenumber %>
+ </div>
+  </p>
+  <p>
+ <div class="input-container">
+ <label for="department">Url:</label>   
+    <%= @company.url %>
+ </div>
+  </p>
+</div>

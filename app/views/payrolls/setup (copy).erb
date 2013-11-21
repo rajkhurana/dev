@@ -1,0 +1,31 @@
+<h1>Create Payrolls</h1>
+
+<%= form_tag '/create_payroll', :method => :post %>
+<input type="hidden" name="start_date" value="<%= @first_day_of_pay %>" />
+<input type="hidden" name="end_date" value="<%= @last_day_of_pay %>" />
+<%=  session[:current_employee_list]%>
+<table border="1">
+  
+  <% @current_payrolls.each_value do |payroll| %>
+	<% user_id = payroll.values[0].user.id.to_s %>
+	  <tr id="payroll_<%= user_id %>">
+	  <td id="selection_<%= user_id %>"><%= payroll.values[0].user.email %></td>
+
+	  <% if first_payroll %>
+		<td id="datapane_<%= user_id %>">
+	  <% else %>
+		<td id="datapane_<%= user_id %>" >
+	  <% end %>
+		<% payroll.values[0].user.jobs.each do |job| %>
+		<% job_id = job.id.to_s %>
+		<%= job.jobtitle %>:<br>
+		Hours Worked: <%= text_field 'payroll_' + user_id + '_job_' + job_id, 'hours_worked' %><br>
+		Deductions: <%= text_field 'payroll_' + user_id + '_job_' + job_id, 'deductions' %><br>
+		<% end %>
+		</td>
+	  </tr>
+	
+  <% end %>
+</table>
+
+<%= submit_tag 'Submit' %>

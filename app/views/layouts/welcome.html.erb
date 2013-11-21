@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simplified Payroll Solution</title>
+    <%= stylesheet_link_tag    "welcome", :media => "all" %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="mainBox">
+
+      <div id="MidCol">
+        <div id="topBox">
+          <div id="SnP"></div>
+          <ul>
+            <li><span class="tick-img"></span><span>Easy To USE</span></li>
+            <li><span class="tick-img"></span><span>Integrated With Your Business</span></li>
+            <li><span class="tick-img"></span><span>Adapts To Your Needs</span></li>
+            </ul>
+          <div class="button"><span>Get Started</span></div>
+
+        </div>
+
+
+        <div id="DisplayArea">
+          <div id="Disp">
+            <%= yield %>           
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+
+<h1>Welcome !</h1>
+<%= form_for(:session, url: sessions_path) do |f| %>
+
+  <p>   
+    <%= f.text_field :email,:placeholder => "Email" %>    
+  </p>
+
+  <p>    
+    <%= f.password_field :password,:placeholder => "Password" %>
+  </p>
+
+  <p class="button"> <%= f.submit "Login"%></p>
+<% end %>
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<div id="topBox">
+          <div id="SnP"></div>
+          <div id="ThreeConCont">	
+            <div id="Notification"></div>
+            <div id="Help"></div>
+            <% if current_user %> 
+             <div>          
+              <%= link_to "", log_out_path,:id =>"Logout" %>
+             <div class="profile-popup" >
+             <ul class="dropdown-menu">
+                <li> <%= current_user.email %></li>
+                <li><%= link_to "My Profile", show_employee_path,:class =>"my-profile" %></li>
+                <li>
+                  <%= link_to "Log out", log_out_path %>
+                </li>
+              </ul>             
+             </div>
+            </div>
+            <% else %>             
+              <%= link_to "Log in", log_in_path %> 
+            <% end %>
+          </div>
+</div>
+
+

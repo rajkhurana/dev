@@ -1,0 +1,811 @@
+	html
+	{
+		background: url(Images/bkgd.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	::-webkit-scrollbar
+	{
+		width: 24px;
+	} /* this targets the default scrollbar (compulsory) */
+
+	::-webkit-scrollbar-track 
+	{
+    	background: url(Images/scroll.png) no-repeat;
+	} /* the new scrollbar will have a flat appearance with the set background color */
+	
+	::-webkit-scrollbar-thumb 
+	{
+    	background: url(Images/scroll-ball) no-repeat;
+	} /* this will style the thumb, ignoring the track */
+	
+	::-webkit-scrollbar-button 
+	{
+		background: url(Images/scroll-arrow-up.png) no-repeat;
+	} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+	
+	::-webkit-scrollbar-corner 
+	{
+    	background-color: black;
+	} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+	
+	h3 {text-shadow:4px 4px 8px #000000;}
+	h4 {text-shadow:2px 2px 8px #000000;}
+	
+	a:link {color:#FFFFFF;}
+	a:visited {color:#FFFFFF;}
+	a:hover {color:#E69A2D;}
+	a:active {color:#E69A2D;}
+	
+	a:link {text-decoration:none;}
+	a:visited {text-decoration:none;}
+	a:hover {text-decoration:none;}
+	a:active {text-decoration:none;}
+	
+	#mainBox
+	{
+		width:1400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#LeftCol
+	{
+		width:175px;
+		height:800px;
+		float:left;
+		margin-right:20px;
+	}
+		#NavOpt
+		{
+			width:150px;
+			margin-top:240px;
+			float:right;
+			//margin-left:auto;
+			//margin-right:auto;
+		}
+		#Navtext
+		{
+			width:150px;
+			height:30px;
+			margin-top:2px;
+			margin-right:0px;
+			text-align:right;
+			float:right;
+			font-family:abeatbykai;
+			font-size:12px;
+		}
+	#MidCol
+	{
+		width:911px;
+		height:1100px;
+		float:left;
+		background: url(Images/white-box.png) no-repeat;
+	}
+		#topBox
+		{
+			width:875px;
+			height:120px;
+			margin-left:auto;
+			margin-right:auto;
+			background: url(Images/box-header.png) no-repeat;
+		}
+			#SnP
+			{
+				width:600px;
+				height:120px;
+				background: url(Images/logo.png) no-repeat;
+				background-size: 463px 105px;
+				float:left;
+			}
+			#ThreeConCont
+			{
+				width:90px;
+				height:75px;
+				float:right;
+				margin-top:20px;
+				margin-right:10px;
+			}
+				#Notification
+				{
+					width:26px;
+					height:24px;
+					background: url(Images/notifications-icon.png) no-repeat;
+					float:left;
+					margin-top:2px;
+					margin-right:2px;
+				}
+				#Help
+				{
+					width:26px;
+					height:24px;
+					background: url(Images/ask-icon.png) no-repeat;
+					float:left;
+					margin-right:2px;
+				}
+				#Logout
+				{
+					width:26px;
+					height:24px;
+					background: url(Images/logout-icon.png) no-repeat;
+					float:left;
+					margin-right:2px;
+                                        cursor:pointer
+				}
+		#rowConsCont
+		{
+			width:855px;
+			height:115px;
+			margin-bottom:10px;
+		}	
+			#rowConsFour
+			{
+				width:450px;
+				height:83px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:5px;
+			}
+			#rowConsThree
+			{
+				width:360px;
+				height:83px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:5px;
+			}
+				#Button
+				{
+					width:90px;
+					height:115px;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+/*-------------------------------Home Page----------------------------------------------*/
+					#payroll
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/payroll.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#payroll:hover
+						{
+							background: url(Images/payroll-gold.png) no-repeat;
+						}
+					#moneyOut
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/money-out.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#moneyOut:hover
+						{
+							background: url(Images/money-out-gold.png) no-repeat;
+						}
+					#reports
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/reports.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#reports:hover
+						{
+							background: url(Images/reports-gold.png) no-repeat;
+						}
+					#taxes
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/taxes.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#taxes:hover
+						{
+							background: url(Images/taxes-gold.png) no-repeat;
+						}
+/*----------------------------------Manage----------------------------------------------*/
+					#manageEmployee
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/manage-employee.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#manageEmployee:hover
+						{
+							background: url(Images/manage-employee-gold.png) no-repeat;
+						}
+						
+					#addEmployee
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/add-employee.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#addEmployee:hover
+						{
+							background: url(Images/add-employee-gold.png) no-repeat;
+						}
+						
+					#manageCompany
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/manage-company.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#manageCompany:hover
+						{
+							background: url(Images/manage-company-gold.png) no-repeat;
+						}
+						
+					#addCompany
+					{
+						width:90px;
+						height:115px;
+						background: url(Images/add-company.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#addCompany:hover
+						{
+							background: url(Images/add-company-gold.png) no-repeat;
+						}
+/*----------------------------------Payroll---------------------------------------------*/
+
+				#createPayroll
+				{
+					width:90px;
+					height:115px;
+					background: url(Images/create-payroll.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#createPayroll:hover
+					{
+						background: url(Images/create-payroll-gold.png) no-repeat;
+					}
+				#createTimesheet
+				{
+					width:90px;
+					height:115px;
+					background: url(Images/create-timesheet.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#createTimesheet:hover
+					{
+						background: url(Images/create-timesheet-gold.png) no-repeat;
+					}
+				#payrollSettings
+				{
+					width:90px;
+					height:115px;
+					background: url(Images/payroll-settings.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#payrollSettings:hover
+					{
+						background: url(Images/payroll-settings-gold.png) no-repeat;
+					}
+/*----------------------------------Reports---------------------------------------------*/
+				#payrollJournal
+				{
+					width:90px;
+					height:115px;
+					background: url(Images/payroll-journal.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#payrollJournal:hover
+					{
+						background: url(Images/payroll-journal-gold.png) no-repeat;
+					}
+				#earningsReport
+				{
+					width:90px;
+					height:115px;
+					background: url(Images/earnings-report.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#earningsReport:hover
+					{
+						background: url(Images/earnings-report-gold.png) no-repeat;
+					}
+				#laborReport
+				{
+					width:90px;
+					height:115px;
+					background: url(Images/labor-report.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#laborReport:hover
+					{
+						background: url(Images/labor-report-gold.png) no-repeat;
+					}
+		#DisplayArea
+		{
+			width:860px;
+			height:508px;
+			margin:auto;
+			//border-style:dotted;
+			//border-width:1px;
+		}
+			#buttonCol
+			{
+				width:200px;
+				height:480px;
+				float:left;
+				//border-style:dotted;
+				//border-width:1px;
+				margin-top:20px;
+				margin-left:20px;
+			}
+				#personalInfo
+				{
+					width:200px;
+					height:44px;
+					background: url(Images/tab-persinfo-dim.png) no-repeat;
+				}
+				#employmentInfo
+				{
+					width:200px;
+					height:44px;
+					background: url(Images/tab-empinfo.png) no-repeat;
+				}
+				#selectEmpComp
+				{
+					width:200px;
+					height:44px;
+					background: url(Images/tab-select-coemp.png) no-repeat;
+				}
+					#selectEmpCompDim
+					{
+						width:200px;
+						height:44px;
+						background: url(Images/tab-select-coemp-dim.png) no-repeat;
+					}
+				#makeEdits
+				{
+					width:200px;
+					height:44px;
+					background: url(Images/tab-edits.png) no-repeat;
+				}
+					#makeEditsDim
+					{
+						width:200px;
+						height:44px;
+						background: url(Images/tab-edits-dim.png) no-repeat;
+					}
+			#displayBackDropSm
+			{
+				width:630px;
+				height:257px;
+				background:url(Images/blueBackDropSm.png) no-repeat;
+				float:left;
+			}
+			#displayBackDrop
+			{
+				width:630px;
+				height:505px;
+				background:url(Images/blueBackDrop.png) no-repeat;
+				float:left;
+			}
+			#displayBackDropTall
+			{
+				width:630px;
+				height:562px;
+				background:url(Images/blueBackDropTall.png) no-repeat;
+				float:left;
+			}
+				#displayWhiteDrop
+				{
+					width:606px;
+					height:386px;
+					background: url(Images/displayWhiteDrop.png) no-repeat;
+					margin-left:14px;
+					margin-top:14px;
+					padding-top:2px;
+				}
+				#displayWhiteDropCol
+				{
+					width:289px;
+					height:484px;
+					background: url(Images/displayWhiteDropCol.png) no-repeat;
+					margin-left:16px;
+					margin-top:14px;
+					margin-bottom:6px;
+					padding-top:2px;
+					float:left;
+				}
+				#companiesHead
+				{
+					width:268px;
+					height:30px;
+					background: url(Images/header-companies.png) no-repeat;
+					margin-left:10px;
+				}
+				#employeesHead
+				{
+					width:268px;
+					height:30px;
+					background: url(Images/header-employees.png) no-repeat;
+					margin-left:8px;
+				}
+					#checkHead
+					{
+						width:30px;
+						height:24px;
+						background: url(Images/icon-select.png) no-repeat;
+						float:left;
+						margin-top:4px;
+						margin-left:4px;
+					}
+					#deselectHead
+					{
+						width:30px;
+						height:24px;
+						background: url(Images/icon-unselect.png) no-repeat;
+						float:left;
+						margin-top:2px;
+					}
+				div.scroll 
+				{
+					height: 420px;
+					width: 268px;
+					overflow-x:hidden;
+					overflow-y:scroll;
+					//border: 1px solid #666;
+					//background-color: #ccc;
+					padding-top: 8px;
+				}
+				#contRow
+				{
+					width:262px;
+					height:40px;
+				}
+				#item
+				{
+					width:200px;
+					height:30px;
+					float:left;
+				}
+				#checkbox
+				{
+					width:30px;
+					height:30px;
+					float:left;
+				}
+				#inputCont
+				{
+					width:590px;
+					height:460px;
+					margin-top:10px;
+					padding-top:2px;
+				}
+				.textInput
+				{
+					width: 330px;
+					height: 38px;
+					background: none;
+					border: none;
+					outline: none;
+					color: #000000;
+					margin-top:8px;
+					margin-bottom:3px;
+					margin-left:15px;
+					font-family:abeatbykai;
+					font-size:18px;
+				}
+					#inputRow
+					{
+						width:588px;
+						height:52px;
+						margin-left:12px;
+						//margin-top:16px;
+						padding-top:4px;
+						//border-style:dotted;
+						//border-width:1px;
+					}
+					#labelRow
+					{
+						width:580px;
+						height:30px;
+						margin-left:15px;
+						//border-style:dotted;
+						//border-width:1px;
+					}
+						#contBox
+						{
+							width:280px;
+							height:50px;
+							float:left;
+							margin-right:12px;
+						}
+						#fieldTagPayF
+						{
+							width:78px;
+							font-family:abeatbykai;
+							float:left;
+							margin-top:14px;
+							//border-style:dotted;
+							//border-width:1px;
+							font-size:14px;
+						}
+						#fieldTagOne
+						{
+							width:100px;
+							font-family:abeatbykai;
+							float:left;
+							margin-top:14px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#fieldTagTwo
+						{
+							width:104px;
+							font-family:abeatbykai;
+							float:left;
+							font-size:14px;
+							margin-top:14px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#fieldTagNum
+						{
+							width:90px;
+							font-family:abeatbykai;
+							float:left;
+							font-size:14px;
+							margin-top:14px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#fieldTagThree
+						{
+							width:180px;
+							font-family:abeatbykai;
+							float:left;
+							margin-top:14px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#inputFieldDep
+						{
+							width:468px;
+							height:42px;
+							background: url(Images/inputBoxDep.png) no-repeat;
+							float:left;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#inputFieldDoH
+						{
+							width:256px;
+							height:42px;
+							background: url(Images/inputBoxDoH.png) no-repeat;
+							float:left;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#inputFieldOne
+						{
+							width:200px;
+							height:42px;
+							background: url(Images/inputBoxOne.png) no-repeat;
+							float:left;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#inputFieldTwo
+						{
+							width:464px;
+							height:42px;
+							background: url(Images/inputBoxTwo.png) no-repeat;
+							float:left;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#inputFieldThree
+						{
+							width:476px;
+							height:42px;
+							background: url(Images/inputBoxThree.png) no-repeat;
+							float:left;
+							margin-right:6px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+				#buttonRow
+				{
+					width:630px;
+					height:46px;
+					margin-top:15px;
+				}
+				#settingsBut
+				{
+					width:188px;
+					height:46px;
+					background: url(Images/settings.png) no-repeat;
+					float:left;
+					margin-left:14px;
+					padding-left:8px;
+					padding-right:8px;
+				}
+				#clearBut
+				{
+					width:188px;
+					height:46px;
+					background: url(Images/clear.png) no-repeat;
+					float:left;
+					padding-left:8px;
+					padding-right:8px;
+				}
+				#nextBut
+				{
+					width:188px;
+					height:46px;
+					background: url(Images/next.png) no-repeat;
+					float:left;
+					padding-left:8px;
+					padding-right:8px;
+				}
+		#TriCol
+		{
+			width:908px;
+			height:400px;
+		}
+			#BriefCont
+			{
+				width:868px;
+				height:340px;
+				margin-left:10px;
+				border-style:dotted;
+				border-width:1px;
+			}
+				#Brief
+				{
+					width:288px;
+					height:333px;
+					float:left;
+					background: url(box-sm.png) no-repeat;
+				}
+					#BriefHead
+					{
+						width:235px;
+						height:60px;
+						border-style:dotted;
+						border-width:1px;
+						margin-left:auto;
+						margin-right:auto;
+					}
+						#NotBriefIco
+						{
+							width:60px;
+							height:60px;
+							float:left;
+							background: url(notifications-main.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#RemBriefIco
+						{
+							width:60px;
+							height:60px;
+							float:left;
+							margin-top:15px;
+							background: url(Images/month-icon.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#NewBriefIco
+						{
+							width:60px;
+							height:60px;
+							float:left;
+							margin-top:15px;
+							background: url(Images/news-icon.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#BriefDesc
+						{
+							width:140px;
+							height:25px;
+							margin-top:15px;
+							float:left;
+							font-family:abeatbykai;
+							font-size:8px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#SettingBut
+						{
+							width:25px;
+							height:25px;
+							margin-top:20px;
+							float:left;
+							background: url(Images/settings-icon.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+					#BriefInf
+					{}
+			
+				
+	#RightCol
+	{
+		width:200px;
+		height:800px;
+		float:left;
+		margin-top:20px;
+		margin-bottom:auto;
+	}
+		#RMenu
+		{
+			width:150px;
+			height:400px;
+			margin-top:200px;
+		}
+			#MenuT
+			{
+				height:10px;
+				width:150px;
+				float:left;
+				margin-top:25px;
+				font-family:abeatbykai;
+				font-size:12px;
+				font-color:#FFFFFF;
+			}
+				#MenuS
+				{
+					height:8px;
+					width:125px;
+					margin-left:25px;
+					margin-top:10px;
+					float:left;
+					font-family:abeatbykai;
+					font-size:12px;
+					font-color:#FFFFFF;
+				}
+.job-list-heading {clear: both;width: 100%;}
+.job-list-heading div{width:auto;float:left;padding-right:40px;margin: 6px 18px 3px 16px;}
+.user-job{float:left;clear:both;width:100%}
+.list-relate-job form{float:left;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    background: none repeat scroll 0 0 grey;
+    width: 232px;
+}

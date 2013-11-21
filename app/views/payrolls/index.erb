@@ -1,0 +1,22 @@
+<h1>Payrolls</h1>
+
+<%= form_for @payroll, :url => { :action => 'setup' } do |p| %>
+	<h3>Employees</h3>
+	<% for user in @users %>
+	<%= check_box("checkbox_" + user.id.to_s, "selected") %>
+	<%= user.email %>
+	<br>
+	<% end %>
+
+	<h3>Date Options</h3>
+	Pay Period:
+	<select name='Pay Period' id='pay_period'>
+		<%= options_for_select([['Weekly', 1], ['Biweekly', 2], ['Monthly', 3], ['Bimonthly', 4]]) %>
+	</select>
+	<br>
+	Last Day of Pay:
+	<%= date_select 'endday', :endday %>
+	<br>
+	<%= p.submit %>
+
+<% end %>

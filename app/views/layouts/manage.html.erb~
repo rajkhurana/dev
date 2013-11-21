@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html id="S&P">
+<head>
+  <title>Simplified Payroll Solution</title>
+  <%= stylesheet_link_tag    "styles", :media => "all" %>
+     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="mainBox">
+
+	 <%= render "layouts/leftsidebar" %>
+
+<div id="MidCol">
+	 <%= render "layouts/topbox" %>
+        
+	<div id="rowConsCont">
+	<div id="rowConsFour">
+	<div id="Button"><a href="" id="manageEmployee"></a></div>
+	<div id="Button"><a href="/new_employee" id="addEmployee"></a></div>
+        <div id="Button"><a href="" id="manageCompany"></a></div>
+        <div id="Button"><a href="/new_company" id="addCompany"></a></div>
+	</div>
+					
+        
+	</div>
+       
+	<div id="DisplayArea">
+       <% if flash.any?%>
+        <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+        <%end %>
+	<div id="Disp">
+	<%= yield %>
+	<%= debug(params) %>
+	<%= debug(session.to_hash) %>
+	</div>
+	</div>
+
+</div>
+
+ <%= render "layouts/rightsidebar" %> 
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<h2>New Job</h2>
+<%= form_for @job do |j| %>
+	<%= j.label 'Job Title' %>
+	<%= j.text_field :jobtitle %>
+	<br>
+	<%= j.label 'Job Description' %>
+	<%= j.text_field :jobdesc %>
+	<br>
+	<%= j.label 'Pay Rate' %>
+	<%= j.text_field :payrate %>
+	<br>
+	<%= j.label 'Is Salaried' %>
+	<%= j.check_box :issalaried %>
+	<br>
+	<%= j.submit %>
+<% end %>
+
+<h2>Related Users and Jobs</h2>
+<%= form_tag '/update_jobs', :method => :post %>
+<table border="1">
+  <tr>
+    <td>User</td>
+    <% @all_jobs.each do |job| %>
+    <td><%= job.jobtitle %></td>
+    <% end %>
+  </tr>
+
+  <% @all_users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <% @all_jobs.each do |job| %>
+      <%
+	if job.users.include? user
+	  check_value = true
+	else check_value = false
+	end
+      %>
+      <td>
+	<%= check_box_tag 'user_' + user.id.to_s + '_job_' + job.id.to_s, 1, check_value %>
+      </td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<%= submit_tag 'Submit' %>

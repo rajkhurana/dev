@@ -1,0 +1,60 @@
+<script>
+$(function() {
+$( "#employee_dob" ).datepicker({dateFormat: 'yy-mm-dd',changeMonth: true,
+        changeYear: true,});
+});
+</script>
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<div class="update-employee-container">
+<h2>Update Employee Information</h2>
+ <div class="box">
+              <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h4>"Oops - We couldn't save the user!"</h4>
+
+      <ul>
+        <% @employee.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= form_for :employee, url: employee_path(@employee), method: :patch do |f| %>
+  <p class="employee-element">
+    <%= f.text_field :firstname,:placeholder=>'FirstName' %>  
+   </p>
+    <p class="employee-element">
+    <%= f.text_field :lastname,:placeholder=>'LastName' %>   
+     </p>
+    <p class="employee-element">
+    <%= f.text_field :ssn,:placeholder=>'SSN'  %>  
+    </p>
+    <p class="employee-element">
+    <%= f.text_area :address,:placeholder=>'Address' %>  
+    </p>
+    <p class="employee-element">
+    <%= f.text_field :zipcode,:placeholder=>'Zipcode'  %>  
+    </p>
+    <p class="employee-element">
+    <%= f.text_field :city,:placeholder=>'City'  %> 
+    </p>
+    <p class="employee-element">
+    <%= f.text_field :state,:placeholder=>'State'  %>
+    </p>
+    <p class="employee-element">
+    <%= f.date_field :dob,:placeholder=>'Date Of Birth'  %>  
+    </p>
+    <p class="employee-element">
+    <%= f.text_field :phonenumber,:placeholder=>'Phone Number'  %>    
+    </p>
+  <p class="employee-element">
+    <%= f.text_field :department,:placeholder=>'Department'  %> 
+   </p>
+    <p class="employee-element">
+    <%= f.submit "Update" %>
+    </p>
+<% end %>

@@ -1,0 +1,20 @@
+<h2>Update Job</h2>
+
+<%= form_for @job, :url => {:controller => "jobs", :action => "jobupdate"} do |j| %>
+        <%= j.hidden_field :id %>
+	<%= j.label 'Job Title' %>
+	<%= j.text_field :jobtitle %>
+	<br>
+	<%= j.label 'Job Description' %>
+	<%= j.text_field :jobdesc %>
+	<br>
+	<%= j.label 'Pay Rate' %>
+	<%= j.text_field :payrate %>
+	<br>
+	<%= j.label 'Is Salaried' %>
+	<%= j.check_box :issalaried %>
+	<br>
+	<%= j.submit "Update" %>
+<% end %>
+
+

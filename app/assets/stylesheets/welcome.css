@@ -1,0 +1,455 @@
+	html
+	{
+		background: url(bkgd-blue.png) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	
+	h3 {text-shadow:4px 4px 8px #000000;}
+	h4 {text-shadow:2px 2px 8px #000000;}
+	
+	a:link {color:#FFFFFF;}
+	a:visited {color:#FFFFFF;}
+	a:hover {color:#E69A2D;}
+	a:active {color:#E69A2D;}
+	
+	a:link {text-decoration:none;}
+	a:visited {text-decoration:none;}
+	a:hover {text-decoration:none;}
+	a:active {text-decoration:none;}
+	
+	#LeftCol
+	{
+		width:175px;
+		height:800px;
+		float:left;
+		margin-right:20px;
+	}
+		#NavOpt
+		{
+			width:150px;
+			margin-top:240px;
+			float:right;
+			//margin-left:auto;
+			//margin-right:auto;
+		}
+		#Navtext
+		{
+			width:150px;
+			height:30px;
+			margin-top:2px;
+			margin-right:0px;
+			text-align:right;
+			float:right;
+			font-family:abeatbykai;
+			font-size:12px;
+		}
+	#MidCol
+	{
+		width:911px;
+		/*height:1100px;*/
+		float:left;
+		background: url(white-box.png) no-repeat;
+	}
+		#topBox
+		{
+			width:875px;
+			/*height:120px;*/
+			margin-left:auto;
+			margin-right:auto;
+			/*background: url(box-header.png) no-repeat;*/
+		}
+			#SnP
+			{
+				width:600px;
+				height:120px;
+				background: url(logo.png) no-repeat;
+				background-size: 350px 105px;
+				float:left;
+			}
+			#ThreeConCont
+			{
+				width:90px;
+				height:75px;
+				float:right;
+				margin-top:20px;
+				margin-right:10px;
+			}
+				#Notification
+				{
+					width:26px;
+					height:24px;
+					background: url(notifications-icon.png) no-repeat;
+					float:left;
+					margin-top:2px;
+					margin-right:2px;
+				}
+				#Help
+				{
+					width:26px;
+					height:24px;
+					background: url(ask-icon.png) no-repeat;
+					float:left;
+					margin-right:2px;
+				}
+				#Logout
+				{
+					width:26px;
+					height:24px;
+					background: url(logout-icon.png) no-repeat;
+					float:left;
+					margin-right:2px;
+				}
+		#rowConsCont
+		{
+			width:855px;
+			height:115px;
+			margin-bottom:10px;
+		}
+			#rowConsFour
+			{
+				width:450px;
+				height:83px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:5px;
+			}
+			#rowConsThree
+			{
+				width:360px;
+				height:83px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:5px;
+			}
+				#Button
+				{
+					width:90px;
+					height:115px;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+/*-------------------------------Home Page----------------------------------------------*/
+					#payroll
+					{
+						width:90px;
+						height:115px;
+						background: url(payroll.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#payroll:hover
+						{
+							background: url(payroll-gold.png) no-repeat;
+						}
+					#moneyOut
+					{
+						width:90px;
+						height:115px;
+						background: url(money-out.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#moneyOut:hover
+						{
+							background: url(money-out-gold.png) no-repeat;
+						}
+					#reports
+					{
+						width:90px;
+						height:115px;
+						background: url(reports.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#reports:hover
+						{
+							background: url(reports-gold.png) no-repeat;
+						}
+					#taxes
+					{
+						width:90px;
+						height:115px;
+						background: url(taxes.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#taxes:hover
+						{
+							background: url(taxes-gold.png) no-repeat;
+						}
+/*----------------------------------Manage----------------------------------------------*/
+					#manageEmployee
+					{
+						width:90px;
+						height:115px;
+						background: url(DashButtons/manage-employee.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#manageEmployee:hover
+						{
+							background: url(DashButtons/manage-employee-gold.png) no-repeat;
+						}
+
+					#addEmployee
+					{
+						width:90px;
+						height:115px;
+						background: url(DashButtons/add-employee.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#addEmployee:hover
+						{
+							background: url(DashButtons/add-employee-gold.png) no-repeat;
+						}
+
+					#manageCompany
+					{
+						width:90px;
+						height:115px;
+						background: url(DashButtons/manage-company.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#manageCompany:hover
+						{
+							background: url(DashButtons/manage-company-gold.png) no-repeat;
+						}
+
+					#addCompany
+					{
+						width:90px;
+						height:115px;
+						background: url(DashButtons/add-company.png) no-repeat;
+						float:left;
+						margin-left:10px;
+						margin-right:10px;
+					}
+						#addCompany:hover
+						{
+							background: url(DashButtons/add-company-gold.png) no-repeat;
+						}
+/*----------------------------------Payroll---------------------------------------------*/
+
+				#createPayroll
+				{
+					width:90px;
+					height:115px;
+					background: url(DashButtons/create-payroll.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#createPayroll:hover
+					{
+						background: url(DashButtons/create-payroll-gold.png) no-repeat;
+					}
+				#createTimesheet
+				{
+					width:90px;
+					height:115px;
+					background: url(DashButtons/create-timesheet.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#createTimesheet:hover
+					{
+						background: url(DashButtons/create-timesheet-gold.png) no-repeat;
+					}
+				#payrollSettings
+				{
+					width:90px;
+					height:115px;
+					background: url(DashButtons/payroll-settings.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#payrollSettings:hover
+					{
+						background: url(DashButtons/payroll-settings-gold.png) no-repeat;
+					}
+/*----------------------------------Reports---------------------------------------------*/
+				#payrollJournal
+				{
+					width:90px;
+					height:115px;
+					background: url(DashButtons/payroll-journal.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#payrollJournal:hover
+					{
+						background: url(DashButtons/payroll-journal-gold.png) no-repeat;
+					}
+				#earningsReport
+				{
+					width:90px;
+					height:115px;
+					background: url(DashButtons/earnings-report.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#earningsReport:hover
+					{
+						background: url(DashButtons/earnings-report-gold.png) no-repeat;
+					}
+				#laborReport
+				{
+					width:90px;
+					height:115px;
+					background: url(DashButtons/labor-report.png) no-repeat;
+					float:left;
+					margin-left:10px;
+					margin-right:10px;
+				}
+					#laborReport:hover
+					{
+						background: url(DashButtons/labor-report-gold.png) no-repeat;
+					}
+		#DisplayArea
+		{
+			width:860px;
+			/*height:500px;*/
+			margin-left:36px;
+			/*border-style:dotted;
+			border-width:1px;*/
+		}
+		#TriCol
+		{
+			width:908px;
+			height:400px;
+		}
+			#BriefCont
+			{
+				width:868px;
+				height:340px;
+				margin-left:10px;
+				border-style:dotted;
+				border-width:1px;
+			}
+				#Brief
+				{
+					width:288px;
+					height:333px;
+					float:left;
+					background: url(box-sm.png) no-repeat;
+				}
+					#BriefHead
+					{
+						width:235px;
+						height:60px;
+						border-style:dotted;
+						border-width:1px;
+						margin-left:auto;
+						margin-right:auto;
+					}
+						#NotBriefIco
+						{
+							width:60px;
+							height:60px;
+							float:left;
+							background: url(notifications-main.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#RemBriefIco
+						{
+							width:60px;
+							height:60px;
+							float:left;
+							margin-top:15px;
+							background: url(month-icon.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#NewBriefIco
+						{
+							width:60px;
+							height:60px;
+							float:left;
+							margin-top:15px;
+							background: url(news-icon.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#BriefDesc
+						{
+							width:140px;
+							height:25px;
+							margin-top:15px;
+							float:left;
+							font-family:abeatbykai;
+							font-size:8px;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+						#SettingBut
+						{
+							width:25px;
+							height:25px;
+							margin-top:20px;
+							float:left;
+							background: url(settings-icon.png) no-repeat;
+							//border-style:dotted;
+							//border-width:1px;
+						}
+					#BriefInf
+					{}
+
+	#RightCol
+	{
+		width:200px;
+		height:800px;
+		float:left;
+		margin-top:20px;
+		margin-bottom:auto;
+	}
+		#RMenu
+		{
+			width:150px;
+			height:400px;
+			margin-top:200px;
+		}
+			#MenuT
+			{
+				height:10px;
+				width:150px;
+				float:left;
+				margin-top:25px;
+				font-family:abeatbykai;
+				font-size:12px;
+				font-color:#FFFFFF;
+			}
+				#MenuS
+				{
+					height:8px;
+					width:125px;
+					margin-left:25px;
+					margin-top:10px;
+					float:left;
+					font-family:abeatbykai;
+					font-size:12px;
+					font-color:#FFFFFF;
+				}
+.active-left-nev {color: #FFA500}
+#SnP{cursor:pointer;width:100%}
+#topBox{width:45%;float:left}
+#DisplayArea{width:50%;float:left}
+#mainBox{margin: 120px auto;width: 929px;}

@@ -1,0 +1,30 @@
+<div id="RightCol">
+        <div id="RMenu">
+          <div id="MenuT"><a href="/manage"><h3>MANAGE</h3></a></div><a href="Manage.html">
+          </a><div id="MenuS"><a href="/notDone"><h4>Companies</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Employees</h4></a></div>
+
+          <div id="MenuT"><a href="Payroll.html"><h3>PROCESS PAYROLL</h3></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Enter Timesheet</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Enter Payroll</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Settings</h4></a></div>
+
+          <div id="MenuT"><a href="/notDone"><h3>MONEY OUT</h3></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Checks</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Direct Deposit</h4></a></div>
+
+          <div id="MenuT"><a href="Reports.html"><h3>REPORTS</h3></a></div>
+
+          <div id="MenuT"><a href="/notDone"><h3>TAXES</h3></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Federal</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>State</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Local</h4></a></div>
+
+          <div id="MenuT"><a href="/notDone"><h3>DOCUMENTS</h3></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Personal</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>State</h4></a></div>
+          <div id="MenuS"><a href="/notDone"><h4>Federal</h4></a></div>
+
+          <div id="MenuT"><a href="/notDone"><h3>SETTINGS</h3></a></div>
+        </div>
+      </div>

@@ -1,0 +1,38 @@
+<h2>List of created Jobs</h2>
+<div class="list-container">
+<div>
+<div class="job-title">
+<h3>Job Title</h3>
+</div>
+<div class="job-desc">
+<h3>Job Description</h3>
+</div>
+<div class="pay-rate">
+<h3>Pay Rate</h3>
+</div>
+<div class="is-salaried">
+<h3>Is Salaried</h3>
+</div>
+<div class="action">
+</div>
+</div>
+<% @all_jobs.each do |c| %>
+<div>
+<div class="job-title">
+<h3><%= c.jobtitle%></h3>
+</div>
+<div class="job-desc">
+<h3><%= c.jobdesc%></h3>
+</div>
+<div class="pay-rate">
+<h3><%= c.payrate%></h3>
+</div>
+<div class="is-salaried">
+<h3><% if c.issalaried %><%=  "Yes"%><% else %><%= "NO" %><% end %></h3>
+</div>
+<div class="action">
+<span><%= link_to "Edit",edit_job_path(c)%></span><span><%= link_to "Delete",job_path(c),method: :delete, data: { confirm: 'Are you sure?' }%></span>
+</div>
+</div>
+<% end %>
+</div>
